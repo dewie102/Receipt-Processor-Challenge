@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiptProcessorChallenge-CSharp", "ReceiptProcessorChallenge-CSharp\ReceiptProcessorChallenge-CSharp.csproj", "{EDE4DEFE-F329-4080-9931-C2ECD0227010}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDE4DEFE-F329-4080-9931-C2ECD0227010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE4DEFE-F329-4080-9931-C2ECD0227010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE4DEFE-F329-4080-9931-C2ECD0227010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE4DEFE-F329-4080-9931-C2ECD0227010}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3946870F-0277-446A-96E8-714E5EA949B7}
+	EndGlobalSection
+EndGlobal

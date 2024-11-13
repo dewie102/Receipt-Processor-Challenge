@@ -1,0 +1,9 @@
+@ReceiptProcessorChallenge_CSharp_HostAddress = http://localhost:5240
+
+GET {{ReceiptProcessorChallenge_CSharp_HostAddress}}/receipts/{id}/points
+Accept: application/json
+
+POST {{ReceiptProcessorChallenge_CSharp_HostAddress}}/receipts/process
+Accept: application/json
+
+###
