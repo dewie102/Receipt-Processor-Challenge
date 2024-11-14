@@ -13,13 +13,13 @@ namespace ReceiptProcessorChallenge_CSharp.Models
         private string shortDescription = "";
         private string price = "";
 
-        public Item()
+        /*public Item()
         {
-
+            Id = Guid.NewGuid().ToString();
         }
 
         [Key]
-        public int Id { get; set; }
+        public string Id { get; set; }*/
 
         [JsonProperty(PropertyName= "shortDescription")]
         public required string ShortDescription {

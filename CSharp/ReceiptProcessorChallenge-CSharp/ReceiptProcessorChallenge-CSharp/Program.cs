@@ -12,7 +12,7 @@ namespace ReceiptProcessorChallenge_CSharp
             // Add services to the container.
             builder.Services.AddControllers();
             builder.Services.AddControllers().AddNewtonsoftJson();
-            builder.Services.AddDbContext<ReceiptContext>(opt => opt.UseInMemoryDatabase("Receipts"));
+            builder.Services.AddDbContext<PointContext>(opt => opt.UseInMemoryDatabase("Points"));
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

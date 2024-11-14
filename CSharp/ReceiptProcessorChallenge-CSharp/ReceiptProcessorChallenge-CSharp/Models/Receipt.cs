@@ -13,8 +13,8 @@ namespace ReceiptProcessorChallenge_CSharp.Models
         private string retailer = "";
         private string total = "";
 
-        [Key]
-        public string Id { get; set; } = "";
+        /*[Key]
+        public string Id { get; set; } = "";*/
 
         [JsonProperty(PropertyName = "retailer")]
         public required string Retailer {
