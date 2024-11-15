@@ -15,7 +15,7 @@ namespace ReceiptProcessorChallenge_CSharp.Entities.Rules
 
             int day = int.Parse(dateParts[2]);
 
-            if(day % 1 == 0)
+            if(day % 2 == 1)
             {
                 result = PointsRewarded;
             }

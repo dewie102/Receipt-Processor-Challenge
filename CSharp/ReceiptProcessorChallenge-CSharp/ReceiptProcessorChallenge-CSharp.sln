@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiptProcessorChallenge-CSharp", "ReceiptProcessorChallenge-CSharp\ReceiptProcessorChallenge-CSharp.csproj", "{EDE4DEFE-F329-4080-9931-C2ECD0227010}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiptProcessorChallenege-Testing", "ReceiptProcessorChallenege-Testing\ReceiptProcessorChallenege-Testing.csproj", "{503F9A23-EE5D-43F4-AF82-E6B6DC3D9575}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EDE4DEFE-F329-4080-9931-C2ECD0227010}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDE4DEFE-F329-4080-9931-C2ECD0227010}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDE4DEFE-F329-4080-9931-C2ECD0227010}.Release|Any CPU.Build.0 = Release|Any CPU
+		{503F9A23-EE5D-43F4-AF82-E6B6DC3D9575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{503F9A23-EE5D-43F4-AF82-E6B6DC3D9575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{503F9A23-EE5D-43F4-AF82-E6B6DC3D9575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{503F9A23-EE5D-43F4-AF82-E6B6DC3D9575}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

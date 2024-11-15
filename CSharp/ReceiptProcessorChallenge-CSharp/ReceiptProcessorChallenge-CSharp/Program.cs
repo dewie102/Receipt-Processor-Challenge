@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ReceiptProcessorChallenge_CSharp.Models;
 
@@ -16,6 +17,13 @@ namespace ReceiptProcessorChallenge_CSharp
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddMvc().ConfigureApiBehaviorOptions(options =>
+            {
+                options.InvalidModelStateResponseFactory = context =>
+                {
+                    return new ObjectResult("The receipt is invalid") { StatusCode = 400};
+                };
+            });
 
             var app = builder.Build();
 
