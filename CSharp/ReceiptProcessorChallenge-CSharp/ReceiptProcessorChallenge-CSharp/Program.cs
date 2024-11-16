@@ -19,6 +19,8 @@ namespace ReceiptProcessorChallenge_CSharp
             builder.Services.AddSwaggerGen();
             builder.Services.AddMvc().ConfigureApiBehaviorOptions(options =>
             {
+                // Setup default response for invalid model creation
+                // This works here because the only model the API is dealing with is receipts
                 options.InvalidModelStateResponseFactory = context =>
                 {
                     return new ObjectResult("The receipt is invalid") { StatusCode = 400};
@@ -27,12 +29,8 @@ namespace ReceiptProcessorChallenge_CSharp
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
-            if(app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+            app.UseSwagger();
+            app.UseSwaggerUI();
 
             app.UseAuthorization();
 
