@@ -26,6 +26,7 @@ namespace ReceiptProcessorChallenge_CSharp.Controllers
                 new PurchaseTimeRule(),
                 new TotalIsMultipleRule(),
                 new TotalWholeDollarRule(),
+                new ItemStartsWithLetter(),
             ];
         }
 
@@ -77,6 +78,30 @@ namespace ReceiptProcessorChallenge_CSharp.Controllers
             }
 
             return Ok(new { points = points.Points });
+        }
+
+        // DELETE: receipts/{id}
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeletePoints(string id)
+        {
+            Point? points = await _context.Points.FindAsync(id);
+
+            if(points == null)
+            {
+                return NotFound("No receipt found for that id");
+            }
+
+            _context.Points.Remove(points);
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch(DbUpdateException ex)
+            {
+                return BadRequest($"Something went wrong saving to in memory database {ex.Message}");
+            }
+
+            return Ok(new { points });
         }
 
         private int CalculatePoints(Receipt receipt)
